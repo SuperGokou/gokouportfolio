@@ -5,7 +5,10 @@
       "Bash(wc:*)",
       "Bash(xxd:*)",
       "Bash(fold:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "mcp__figma-remote-mcp__get_design_context",
+      "mcp__figma-remote-mcp__get_screenshot",
+      "Bash(python3:*)"
     ]
   }
 }
