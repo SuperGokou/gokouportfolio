@@ -58,56 +58,6 @@
   max-width: 100%;
 }
 
-/* Section heading: 07.CONTACT_INTERFACE */
-.contact-heading {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  margin-bottom: 48px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #e2e8f0;
-  position: relative;
-}
-
-.contact-heading__number {
-  font-family: 'Consolas', 'Courier New', monospace;
-  font-size: 2.1rem;
-  font-weight: 700;
-  font-style: italic;
-  color: #bd5d38;
-  line-height: 1;
-  letter-spacing: -1.8px;
-  text-transform: uppercase;
-}
-
-.contact-heading__title {
-  font-family: 'Saira Extra Condensed', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #343a40;
-  line-height: 1;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.contact-heading__line {
-  flex: 1;
-  height: 1px;
-  background: #e2e8f0;
-  margin-left: 24px;
-  position: relative;
-}
-
-.contact-heading__line::after {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: -4px;
-  width: 8px;
-  height: 8px;
-  background: #bd5d38;
-}
-
 /* Grid layout */
 .contact-grid {
   display: grid;

@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e61f6cad-3430-46fc-94b9-9ffe7433eba8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.claude/settings.local.json" beforeDir="false" afterPath="$PROJECT_DIR$/.claude/settings.local.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/contact.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/projects.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/covid_xray.avif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/electricity_generation.avif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/mortgage_delinquency.avif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/police_use_of_force.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/projects/police_use_of_force.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/seattle_housing_model.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/projects/seattle_housing_model.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/projects/starwar_battle.avif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1769956480443</updated>
       <workItem from="1769956481453" duration="9018000" />
-      <workItem from="1769989384052" duration="3731000" />
+      <workItem from="1769989384052" duration="6480000" />
     </task>
     <servers />
   </component>
