@@ -11,8 +11,15 @@ document.addEventListener('DOMContentLoaded', function () {
       btn.classList.add('active');
       var filter = btn.getAttribute('data-filter');
 
+      var featuredCount = {};
       featuredCards.forEach(function (card) {
-        card.style.display = (filter === 'all' || card.getAttribute('data-category') === filter) ? '' : 'none';
+        var cat = card.getAttribute('data-category');
+        if (filter === 'all') {
+          featuredCount[cat] = (featuredCount[cat] || 0) + 1;
+          card.style.display = featuredCount[cat] <= 1 ? '' : 'none';
+        } else {
+          card.style.display = cat === filter ? '' : 'none';
+        }
       });
 
       projectCards.forEach(function (card) {

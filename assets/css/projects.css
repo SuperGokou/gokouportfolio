@@ -92,18 +92,40 @@
    ------------------------------------------------------- */
 
 .featured-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 32px;
+  overflow-x: auto;
   margin-bottom: 64px;
+  padding-bottom: 16px;
+  scroll-snap-type: x mandatory;
+}
+
+.featured-grid::-webkit-scrollbar {
+  height: 6px;
+}
+
+.featured-grid::-webkit-scrollbar-track {
+  background: #f1f3f5;
+  border-radius: 3px;
+}
+
+.featured-grid::-webkit-scrollbar-thumb {
+  background: #ced4da;
+  border-radius: 3px;
+}
+
+.featured-grid::-webkit-scrollbar-thumb:hover {
+  background: #adb5bd;
 }
 
 .featured-card {
+  flex: 0 0 340px;
   border: 1px solid #e9ecef;
   border-radius: 12px;
   overflow: hidden;
   background: #fff;
   transition: box-shadow 0.25s, transform 0.25s;
+  scroll-snap-align: start;
 }
 
 .featured-card:hover {
@@ -514,10 +536,6 @@
    ------------------------------------------------------- */
 
 @media (max-width: 991px) {
-  .featured-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .recent-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -528,10 +546,6 @@
 }
 
 @media (max-width: 768px) {
-  .featured-grid {
-    grid-template-columns: 1fr;
-  }
-
   .recent-grid {
     grid-template-columns: 1fr;
   }
@@ -560,4 +574,68 @@
   .archive-table td:nth-child(3) {
     display: none;
   }
+}
+
+/* -------------------------------------------------------
+   Interests word cloud
+   ------------------------------------------------------- */
+
+.interests-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  line-height: 1.1;
+}
+
+.iw {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #343a40;
+  opacity: 0.18;
+  transition: opacity 0.3s, color 0.3s;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.iw:hover {
+  opacity: 1;
+}
+
+.iw--sm {
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.14;
+}
+
+.iw--md {
+  font-size: 1.8rem;
+  opacity: 0.2;
+}
+
+.iw--lg {
+  font-size: 2.8rem;
+  opacity: 0.22;
+}
+
+.iw--xl {
+  font-size: 4rem;
+  opacity: 0.25;
+}
+
+.iw--accent {
+  color: #bd5d38;
+}
+
+.iw--accent:hover {
+  color: #bd5d38;
+}
+
+.iw:hover {
+  color: #343a40;
+}
+
+.iw--accent:hover {
+  color: #bd5d38;
 }
